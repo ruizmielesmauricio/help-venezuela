@@ -63,7 +63,7 @@ const donationData = [
         responding: true,
         supportType: "Oxfam Ireland's Emergency Appeal aims to support humanitarian workers on the ground in Venezuela.",
         url: "https://www.oxfamireland.org/press/oxfam-ireland-launches-emergency-appeal-to-support-venezuela-following-major-earthquakes",
-        website: "https://www.unicef.org.ie/"
+        website: "https://www.oxfam.org/"
       }
     ]
   },
