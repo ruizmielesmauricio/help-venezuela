@@ -217,8 +217,8 @@ countrySelect.addEventListener("change", () => {
         <p><strong>What they are providing:</strong> ${org.supportType}</p>
 
         <div class="button-row">
-          <a class="button" href="${org.url}" target="_blank" rel="noopener noreferrer">Donate</a>
-          <a class="secondary-button" href="${org.website}" target="_blank" rel="noopener noreferrer">Official website</a>
+          <a class="button" href="${org.url}" target="_blank" rel="noopener noreferrer"> ❤️ Donate </a>
+          <a class="secondary-button" href="${org.website}" target="_blank" rel="noopener noreferrer"> 🌐 Website </a>
         </div>
       </div>
     `).join("")}
