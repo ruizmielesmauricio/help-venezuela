@@ -101,8 +101,9 @@ select {
     transition: all .2s ease;
 }
 
-.button:hover {
-  background: #991b1b;
+.button,
+.secondary-button:hover {
+  background: #d4e5fa;
 }
 
 .note {
