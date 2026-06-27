@@ -65,7 +65,8 @@ const donationData = [
         url: "https://www.oxfamireland.org/press/oxfam-ireland-launches-emergency-appeal-to-support-venezuela-following-major-earthquakes",
         website: "https://www.unicef.org.ie/"
       }
-    ],
+    ]
+  },
   {
     country: "United Kingdom",
     flag: "🇬🇧",
