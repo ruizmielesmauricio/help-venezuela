@@ -1,111 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Help Venezuela</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
 <body>
+  <header class="hero">
+    <div class="flag-bg">
+      <div class="stars">★ ★ ★ ★ ★ ★ ★ ★</div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-icon">🤍</div>
+      <div>
+        <h1>Venezuela Earthquake Relief</h1>
+        <p>Verified donation links from trusted organizations helping communities affected by the 2026 earthquake.</p>
+      </div>
+    </div>
+  </header>
+
   <main class="container">
-    <section class="hero">
-      <div class="flag-bar"></div>
-      <h1>Help Venezuela</h1>
-      <p class="subtitle">Verified donation links by country and useful relief information.</p>
+    <section class="card share-card">
+      <div>
+        <h2>❤️ Help more people find trusted ways to donate</h2>
+        <p>Sharing this website helps connect more people with verified humanitarian organizations responding to the Venezuela earthquake.</p>
+      </div>
+
+      <div class="share-buttons">
+        <a id="shareX" class="share-btn x" target="_blank">𝕏 Share</a>
+        <a id="shareFacebook" class="share-btn facebook" target="_blank">📘 Facebook</a>
+        <a id="shareThreads" class="share-btn threads" target="_blank">@ Threads</a>
+        <button id="shareInstagram" class="share-btn instagram">📸 Copy for Instagram</button>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Donate by Country</h2>
-      <p>Select your country to see relevant donation options.</p>
+    <section class="main-grid">
+      <div class="card">
+        <h2>1. Select your country</h2>
 
-      <label for="countrySelect">Choose a country</label>
-      <select id="countrySelect">
-        <option value="">Select a country...</option>
-      </select>
+        <label for="countrySelect">Choose a country</label>
+        <select id="countrySelect">
+          <option value="">Select a country...</option>
+        </select>
+      </div>
 
-      <div id="donationResults" class="results"></div>
+      <div class="card">
+        <h2>2. Organizations that are currently responding</h2>
+
+        <div class="info-box">
+          These organizations are actively providing humanitarian aid and support.
+        </div>
+
+        <div id="donationResults" class="results">
+          <p>Select a country to see the list of organizations.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Important</h2>
-      <p>
-        Please donate only through official or verified organizations.
-        Avoid sending money to personal accounts unless you fully trust the source.
-      </p>
+    <section class="bottom-grid">
+      <div class="card">
+        <h2>Suggest an organization</h2>
+        <p>Know another official donation page supporting Venezuela relief? Send it for review before it is added to this directory.</p>
+
+        <a
+          class="suggest-button"
+          href="PASTE_YOUR_GOOGLE_FORM_LINK_HERE"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ➕ Suggest an organization
+        </a>
+      </div>
+
+      <div class="card last-updated-card">
+        <h2>Last updated</h2>
+
+        <div class="time-grid">
+          <div>
+            <strong>🇻🇪 Venezuela</strong>
+            <span id="timeVenezuela"></span>
+          </div>
+
+          <div>
+            <strong>🇺🇸 USA / New York</strong>
+            <span id="timeUSA"></span>
+          </div>
+
+          <div>
+            <strong>🇮🇪 Ireland</strong>
+            <span id="timeIreland"></span>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <section class="card">
-  <h2>Suggest an organization</h2>
-  <p>
-    Know another official donation page supporting Venezuela relief?
-    Send it for review before it is added to this directory.
-  </p>
-
-  <a
-    class="suggest-button"
-    href="https://docs.google.com/forms/d/e/1FAIpQLScm9RrHOZ-0Utdnq-n3hjLJ6qchghDPPBC37BW8kmHhDdgnhw/viewform?usp=publish-editor"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    ➕ Suggest an organization
-  </a>
-</section>
-
-<section class="card last-updated-card">
-  <h2>Last updated</h2>
-
-  <div class="time-grid">
-    <div>
-      <strong>🇻🇪 Venezuela</strong>
-      <span id="timeVenezuela"></span>
-    </div>
-
-    <div>
-      <strong>🇺🇸 USA / New York</strong>
-      <span id="timeUSA"></span>
-    </div>
-
-    <div>
-      <strong>🇮🇪 Ireland</strong>
-      <span id="timeIreland"></span>
-    </div>
-  </div>
-</section>
-
-    <section class="card">
-
-    <h2>❤️ Help more people find trusted ways to donate</h2>
-
-    <p>
-        Sharing this website helps connect more people with verified humanitarian
-        organizations responding to the Venezuela earthquake.
-    </p>
-
-    <div class="share-buttons">
-
-        <a id="shareX" class="share-btn x" target="_blank">
-            𝕏 Share
-        </a>
-
-        <a id="shareFacebook" class="share-btn facebook" target="_blank">
-            📘 Facebook
-        </a>
-
-        <a id="shareThreads" class="share-btn threads" target="_blank">
-            @ Threads
-        </a>
-
-        <button id="shareInstagram" class="share-btn instagram">
-            📸 Copy for Instagram
-        </button>
-
-    </div>
-
-</section>
-
-
   </main>
 
   <script src="script.js"></script>
 </body>
-</html>
