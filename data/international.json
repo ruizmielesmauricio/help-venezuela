@@ -4,6 +4,15 @@
   "countryCode": "GLOBAL",
   "organizations": [
     {
+    name: "International Organization for Migration (IOM)",
+    trustBadge: "UN Migration Agency",
+    responding: true,
+    supportType:
+      "Emergency shelter, humanitarian transport, displacement assistance, protection services, logistics support, and recovery assistance for people affected by the Venezuela earthquakes.",
+    url: "https://donors.iom.int/page/venezuela-earthquake",
+    website: "https://www.iom.int/"
+    },
+    {
       "name": "UNHCR",
       "trustBadge": "UN Agency",
       "responding": true,
