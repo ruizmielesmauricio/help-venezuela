@@ -98,6 +98,20 @@ const donationData = [
     ]
   },
   {
+  country: "Chile",
+  flag: "🇨🇱",
+  organizations: [
+    {
+      name: "TECHO",
+      trustBadge: "Latin American Housing NGO",
+      responding: true,
+      supportType: "Emergency shelter, modular emergency housing, urgent assistance, and reconstruction support for families affected by the Venezuela earthquake.",
+      url: "https://techo.org/en/emergencia-venezuela/",
+      website: "https://techo.org/"
+    }
+  ]
+  },
+  {
     country: "United States",
     flag: "🇺🇸",
     organizations: [
