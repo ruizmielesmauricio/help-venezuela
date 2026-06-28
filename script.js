@@ -277,3 +277,31 @@ countrySelect.addEventListener("change", () => {
     `).join("")}
   `;
 });
+
+// Adding the sharing fucntions
+const websiteURL = window.location.href;
+
+const shareMessage =
+`Support verified humanitarian organizations responding to the Venezuela earthquake.
+
+Find trusted donation links by country.
+
+${websiteURL}`;
+
+document.getElementById("shareX").href =
+`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareMessage)}`;
+
+document.getElementById("shareFacebook").href =
+`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(websiteURL)}`;
+
+document.getElementById("shareThreads").href =
+`https://www.threads.net/intent/post?text=${encodeURIComponent(shareMessage)}`;
+
+document
+.getElementById("shareInstagram")
+.addEventListener("click", async () => {
+
+    await navigator.clipboard.writeText(websiteURL);
+
+    alert("✅ Link copied! Open Instagram and paste it into your Story, Reel or Bio.");
+});
