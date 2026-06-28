@@ -307,8 +307,36 @@ document
 });
 
 // ADDING TIME AND FORM
-const lastUpdated = new Date("2026-06-28T00:00:00Z");
+async function loadLastUpdated() {
+  try {
+    const response = await fetch("last-updated.txt");
+    const timestamp = await response.text();
+    const lastUpdated = new Date(timestamp.trim());
 
+    document.getElementById("timeVenezuela").textContent =
+      formatLastUpdated(lastUpdated, "America/Caracas");
+
+    document.getElementById("timeUSA").textContent =
+      formatLastUpdated(lastUpdated, "America/New_York");
+
+    document.getElementById("timeIreland").textContent =
+      formatLastUpdated(lastUpdated, "Europe/Dublin");
+  } catch {
+    document.getElementById("timeVenezuela").textContent = "Unavailable";
+    document.getElementById("timeUSA").textContent = "Unavailable";
+    document.getElementById("timeIreland").textContent = "Unavailable";
+  }
+}
+
+function formatLastUpdated(date, timeZone) {
+  return new Intl.DateTimeFormat("en-GB", {
+    timeZone,
+    dateStyle: "medium",
+    timeStyle: "short"
+  }).format(date);
+}
+
+loadLastUpdated();
 function formatLastUpdated(timeZone) {
   return new Intl.DateTimeFormat("en-GB", {
     timeZone,
