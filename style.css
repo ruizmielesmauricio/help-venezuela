@@ -341,3 +341,23 @@ select {
     color:white;
     border-color:#1d4ed8;
 }
+
+.translate-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.language-label {
+  font-weight: 700;
+  color: #374151;
+}
+
+#google_translate_element select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+}
