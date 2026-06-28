@@ -1,0 +1,31 @@
+{
+  "country": "United Kingdom",
+  "flag": "🇬🇧",
+  "countryCode": "GB",
+  "organizations": [
+    {
+      "name": "UNICEF UK",
+      "trustBadge": "UN Agency",
+      "responding": true,
+      "supportType": "Clean water, medical care, emergency supplies, and support for children and families affected by the earthquakes.",
+      "url": "https://www.unicef.org.uk/donate/donate-to-our-venezuela-earthquake-appeal/",
+      "website": "https://www.unicef.org.uk/"
+    },
+    {
+      "name": "British Red Cross",
+      "trustBadge": "Red Cross",
+      "responding": true,
+      "supportType": "Emergency humanitarian support through the Disaster Fund for people affected by the Venezuela earthquake crisis.",
+      "url": "https://donate.redcross.org.uk/appeal/Venezuela-earthquake-crisis",
+      "website": "https://www.redcross.org.uk/"
+    },
+    {
+      "name": "IRC UK",
+      "trustBadge": "Humanitarian NGO",
+      "responding": true,
+      "supportType": "Urgent assistance for families affected by the Venezuela earthquakes.",
+      "url": "https://www.rescue.org/uk",
+      "website": "https://www.rescue.org/uk"
+    }
+  ]
+}

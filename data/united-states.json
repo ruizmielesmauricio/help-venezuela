@@ -1,0 +1,39 @@
+{
+  "country": "United States",
+  "flag": "🇺🇸",
+  "countryCode": "US",
+  "organizations": [
+    {
+      "name": "UNICEF USA",
+      "trustBadge": "UN Agency",
+      "responding": true,
+      "supportType": "Emergency support for children and families affected by the Venezuela earthquakes.",
+      "url": "https://www.unicefusa.org/stories/venezuela-earthquakes-children-need-help-now",
+      "website": "https://www.unicefusa.org/"
+    },
+    {
+      "name": "Direct Relief",
+      "trustBadge": "Medical Humanitarian Aid",
+      "responding": true,
+      "supportType": "Medical aid, emergency medicines, search and rescue support, and response grants dedicated to Venezuela earthquake relief.",
+      "url": "https://www.directrelief.org/emergency/venezuela-earthquakes-2026/",
+      "website": "https://www.directrelief.org/"
+    },
+    {
+      "name": "International Rescue Committee",
+      "trustBadge": "Humanitarian NGO",
+      "responding": true,
+      "supportType": "Health, nutrition, WASH, protection, education, food security, livelihood services, and emergency supplies.",
+      "url": "https://www.rescue.org/article/how-help-survivors-earthquakes-venezuela",
+      "website": "https://www.rescue.org/"
+    },
+    {
+      "name": "World Central Kitchen",
+      "trustBadge": "Emergency Food Relief",
+      "responding": true,
+      "supportType": "Serving meals and supporting impacted families with local partners.",
+      "url": "https://wck.org/relief/caracas-venezuela-earthquakes-2026/",
+      "website": "https://wck.org/"
+    }
+  ]
+}

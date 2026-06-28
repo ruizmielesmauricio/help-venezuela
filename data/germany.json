@@ -1,0 +1,15 @@
+{
+  "country": "Germany",
+  "flag": "🇩🇪",
+  "countryCode": "DE",
+  "organizations": [
+    {
+      "name": "Malteser International",
+      "trustBadge": "Humanitarian Aid NGO",
+      "responding": true,
+      "supportType": "Immediate emergency assistance and rapid relief measures in Venezuela.",
+      "url": "https://www.malteser-international.org/en/our-work/americas/earthquakes-in-venezuela-your-donation-helps.html",
+      "website": "https://www.malteser-international.org/"
+    }
+  ]
+}

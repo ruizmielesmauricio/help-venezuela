@@ -1,0 +1,55 @@
+{
+  "country": "International / Global",
+  "flag": "🌍",
+  "countryCode": "GLOBAL",
+  "organizations": [
+    {
+      "name": "UNHCR",
+      "trustBadge": "UN Agency",
+      "responding": true,
+      "supportType": "Emergency protection, shelter, core relief items, and support for refugees, displaced families, asylum-seekers, returnees, and other vulnerable people affected by the Venezuela earthquakes.",
+      "url": "https://giving.unhcr.org/en/venezuela/",
+      "website": "https://www.unhcr.org/"
+    },
+    {
+      "name": "IFRC / Venezuelan Red Cross",
+      "trustBadge": "Red Cross Red Crescent",
+      "responding": true,
+      "supportType": "Search and rescue, emergency relief, assistance to injured people, humanitarian cargo, support to Venezuelan Red Cross operations.",
+      "url": "https://donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/~my-donation?_cv=1",
+      "website": "https://www.ifrc.org/"
+    },
+    {
+      "name": "Direct Relief",
+      "trustBadge": "Medical Humanitarian Aid",
+      "responding": true,
+      "supportType": "Emergency medical aid, wound care, surgical supplies, antibiotics, field medic packs, and support for search and rescue teams.",
+      "url": "https://www.directrelief.org/emergency/venezuela-earthquakes-2026/",
+      "website": "https://www.directrelief.org/"
+    },
+    {
+      "name": "International Rescue Committee",
+      "trustBadge": "Humanitarian NGO",
+      "responding": true,
+      "supportType": "Health, nutrition, WASH, protection, education, food security, livelihoods, and emergency supplies.",
+      "url": "https://www.rescue.org/article/how-help-survivors-earthquakes-venezuela",
+      "website": "https://www.rescue.org/"
+    },
+    {
+      "name": "World Central Kitchen",
+      "trustBadge": "Emergency Food Relief",
+      "responding": true,
+      "supportType": "Food relief and meals for impacted families through local partners.",
+      "url": "https://wck.org/relief/caracas-venezuela-earthquakes-2026/",
+      "website": "https://wck.org/"
+    },
+    {
+      "name": "Malteser International",
+      "trustBadge": "Humanitarian Aid NGO",
+      "responding": true,
+      "supportType": "Immediate emergency assistance and rapid relief measures in affected areas.",
+      "url": "https://www.malteser-international.org/en/our-work/americas/earthquakes-in-venezuela-your-donation-helps.html",
+      "website": "https://www.malteser-international.org/"
+    }
+  ]
+}

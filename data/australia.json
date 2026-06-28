@@ -1,0 +1,15 @@
+{
+  "country": "Australia",
+  "flag": "🇦🇺",
+  "countryCode": "AU",
+  "organizations": [
+    {
+      "name": "Australian Red Cross",
+      "trustBadge": "Red Cross",
+      "responding": true,
+      "supportType": "Support for communities impacted by the Venezuela earthquakes through Red Cross humanitarian response.",
+      "url": "https://www.redcross.org.au/media/releases/2026/venezuela-earthquakes/",
+      "website": "https://www.redcross.org.au/"
+    }
+  ]
+}

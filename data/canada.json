@@ -1,0 +1,15 @@
+{
+  "country": "Canada",
+  "flag": "🇨🇦",
+  "countryCode": "CA",
+  "organizations": [
+    {
+      "name": "Canadian Red Cross",
+      "trustBadge": "Red Cross",
+      "responding": true,
+      "supportType": "Supports the Venezuela Earthquakes Appeal and Red Cross Red Crescent response for affected communities.",
+      "url": "https://www.redcross.ca/how-we-help/current-emergency-responses/venezuela-earthquakes",
+      "website": "https://www.redcross.ca/"
+    }
+  ]
+}
