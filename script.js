@@ -307,10 +307,13 @@ document
 });
 
 // ADDING TIME AND FORM
+// ===== LAST UPDATED =====
+
 async function loadLastUpdated() {
   try {
     const response = await fetch("last-updated.txt");
     const timestamp = await response.text();
+
     const lastUpdated = new Date(timestamp.trim());
 
     document.getElementById("timeVenezuela").textContent =
@@ -321,10 +324,13 @@ async function loadLastUpdated() {
 
     document.getElementById("timeIreland").textContent =
       formatLastUpdated(lastUpdated, "Europe/Dublin");
+
   } catch {
+
     document.getElementById("timeVenezuela").textContent = "Unavailable";
     document.getElementById("timeUSA").textContent = "Unavailable";
     document.getElementById("timeIreland").textContent = "Unavailable";
+
   }
 }
 
@@ -337,13 +343,6 @@ function formatLastUpdated(date, timeZone) {
 }
 
 loadLastUpdated();
-function formatLastUpdated(timeZone) {
-  return new Intl.DateTimeFormat("en-GB", {
-    timeZone,
-    dateStyle: "medium",
-    timeStyle: "short"
-  }).format(lastUpdated);
-}
 
 document.getElementById("timeVenezuela").textContent =
   formatLastUpdated("America/Caracas");
