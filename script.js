@@ -46,6 +46,22 @@ const donationData = [
     ]
   },
   {
+    country: "Spain",
+    flag: "🇪🇸",
+    organizations: [
+      {
+         name: "Save the Children España",
+         trustBadge: "International Children's NGO",
+         responding: true,
+         supportType: "Emergency healthcare, child protection, psychosocial support, emergency shelter, food, clean water, and essential relief supplies for children and families affected by the Venezuela earthquakes.",
+         url: "https://www.savethechildren.es/donacion-ong/terremoto-en-venezuela-2026",
+         website: "https://www.savethechildren.es/"
+        }
+        
+      ]
+        
+   },
+  {
     country: "Ireland",
     flag: "🇮🇪",
     organizations: [
