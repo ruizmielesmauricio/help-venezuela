@@ -305,3 +305,23 @@ document
 
     alert("✅ Link copied! Open Instagram and paste it into your Story, Reel or Bio.");
 });
+
+// ADDING TIME AND FORM
+const lastUpdated = new Date("2026-06-28T00:00:00Z");
+
+function formatLastUpdated(timeZone) {
+  return new Intl.DateTimeFormat("en-GB", {
+    timeZone,
+    dateStyle: "medium",
+    timeStyle: "short"
+  }).format(lastUpdated);
+}
+
+document.getElementById("timeVenezuela").textContent =
+  formatLastUpdated("America/Caracas");
+
+document.getElementById("timeUSA").textContent =
+  formatLastUpdated("America/New_York");
+
+document.getElementById("timeIreland").textContent =
+  formatLastUpdated("Europe/Dublin");
