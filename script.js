@@ -232,62 +232,6 @@ const donationData = [
   }
 ];
 
-const translations = {
-  en: {
-    language: "🌐 Language",
-    countryPlaceholder: "Select a country...",
-    selectedCountryNote:
-      "Donation links below point to official organization pages connected to the Venezuela earthquake response. Always review the page before donating.",
-    selectMessage: "Select a country to see the list of organizations.",
-    responding: "Currently responding ✅",
-    notResponding: "Response not confirmed",
-    providing: "What they are providing:",
-    donate: "❤️ Donate",
-    website: "🌐 Website"
-  },
-
-  es: {
-    language: "🌐 Idioma",
-    countryPlaceholder: "Selecciona un país...",
-    selectedCountryNote:
-      "Los enlaces de donación apuntan a páginas oficiales conectadas con la respuesta al terremoto en Venezuela. Revisa siempre la página antes de donar.",
-    selectMessage: "Selecciona un país para ver la lista de organizaciones.",
-    responding: "Respondiendo actualmente ✅",
-    notResponding: "Respuesta no confirmada",
-    providing: "Qué están proporcionando:",
-    donate: "❤️ Donar",
-    website: "🌐 Sitio web"
-  },
-
-  pt: {
-    language: "🌐 Idioma",
-    countryPlaceholder: "Selecione um país...",
-    selectedCountryNote:
-      "Os links de doação apontam para páginas oficiais ligadas à resposta ao terremoto na Venezuela. Revise sempre a página antes de doar.",
-    selectMessage: "Selecione um país para ver a lista de organizações.",
-    responding: "Respondendo atualmente ✅",
-    notResponding: "Resposta não confirmada",
-    providing: "O que estão fornecendo:",
-    donate: "❤️ Doar",
-    website: "🌐 Site"
-  },
-
-  fr: {
-    language: "🌐 Langue",
-    countryPlaceholder: "Choisissez un pays...",
-    selectedCountryNote:
-      "Les liens de don renvoient vers des pages officielles liées à la réponse au séisme au Venezuela. Vérifiez toujours la page avant de faire un don.",
-    selectMessage: "Choisissez un pays pour voir la liste des organisations.",
-    responding: "Intervention en cours ✅",
-    notResponding: "Réponse non confirmée",
-    providing: "Ce qu'elles fournissent :",
-    donate: "❤️ Faire un don",
-    website: "🌐 Site web"
-  }
-};
-
-let currentLanguage = localStorage.getItem("language") || "en";
-
 const countrySelect = document.getElementById("countrySelect");
 const donationResults = document.getElementById("donationResults");
 
@@ -296,7 +240,7 @@ function buildCountryOptions() {
 
   const placeholder = document.createElement("option");
   placeholder.value = "";
-  placeholder.textContent = translations[currentLanguage].countryPlaceholder;
+  placeholder.textContent = "Select a country...";
   countrySelect.appendChild(placeholder);
 
   donationData.forEach((item, index) => {
@@ -311,7 +255,7 @@ function renderOrganizations() {
   const selectedIndex = countrySelect.value;
 
   if (selectedIndex === "") {
-    donationResults.innerHTML = `<p>${translations[currentLanguage].selectMessage}</p>`;
+    donationResults.innerHTML = `<p>Select a country to see the list of organizations.</p>`;
     return;
   }
 
@@ -321,7 +265,7 @@ function renderOrganizations() {
     <h3>${selectedCountry.flag} ${selectedCountry.country}</h3>
 
     <div class="note">
-      ${translations[currentLanguage].selectedCountryNote}
+      Donation links below point to official organization pages connected to the Venezuela earthquake response. Always review the page before donating.
     </div>
 
     ${selectedCountry.organizations.map(org => `
@@ -331,21 +275,21 @@ function renderOrganizations() {
         <div class="org-topline">
           <span class="badge">${org.trustBadge}</span>
           <span class="responding">
-            ${org.responding ? translations[currentLanguage].responding : translations[currentLanguage].notResponding}
+            ${org.responding ? "Currently responding ✅" : "Response not confirmed"}
           </span>
         </div>
 
         <p class="org-description">
-          <strong>${translations[currentLanguage].providing}</strong> ${org.supportType}
+          <strong>What they are providing:</strong> ${org.supportType}
         </p>
 
         <div class="button-row">
           <a class="button" href="${org.url}" target="_blank" rel="noopener noreferrer">
-            ${translations[currentLanguage].donate}
+            ❤️ Donate
           </a>
 
           <a class="secondary-button" href="${org.website}" target="_blank" rel="noopener noreferrer">
-            ${translations[currentLanguage].website}
+            🌐 Website
           </a>
         </div>
       </div>
@@ -353,36 +297,9 @@ function renderOrganizations() {
   `;
 }
 
-function updateLanguageButtons() {
-  document.querySelectorAll(".lang-btn").forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.lang === currentLanguage);
-  });
-
-  const languageLabel = document.querySelector(".language-label");
-  if (languageLabel) {
-    languageLabel.textContent = translations[currentLanguage].language;
-  }
-}
-
-document.querySelectorAll(".lang-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    currentLanguage = btn.dataset.lang;
-    localStorage.setItem("language", currentLanguage);
-
-    const selectedValue = countrySelect.value;
-
-    buildCountryOptions();
-    countrySelect.value = selectedValue;
-
-    updateLanguageButtons();
-    renderOrganizations();
-  });
-});
-
 countrySelect.addEventListener("change", renderOrganizations);
 
 buildCountryOptions();
-updateLanguageButtons();
 renderOrganizations();
 
 
