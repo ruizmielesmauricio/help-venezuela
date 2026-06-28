@@ -4,6 +4,14 @@ const donationData = [
     flag: "🌍",
     organizations: [
       {
+        name: "UNHCR",
+        trustBadge: "UN Agency",
+        responding: true,
+        supportType: "Emergency protection, shelter, core relief items, and support for refugees, displaced families, asylum-seekers, returnees, and other vulnerable people affected by the Venezuela earthquakes.",
+        url: "https://giving.unhcr.org/en/venezuela/",
+        website: "https://www.unhcr.org/"
+      },
+      {
         name: "IFRC / Venezuelan Red Cross",
         trustBadge: "Red Cross Red Crescent",
         responding: true,
