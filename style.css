@@ -193,40 +193,45 @@ select {
 
 .org-card {
   border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  padding: 18px;
-  margin-bottom: 16px;
+  border-radius: 20px;
+  padding: 26px;
+  margin-bottom: 18px;
+  background: white;
+}
+
+.org-title {
+  margin: 0 0 16px;
+  font-size: 1.8rem;
+  line-height: 1.1;
 }
 
 .org-topline {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 12px;
+  gap: 12px;
+  margin-bottom: 22px;
 }
 
-.badge {
+.badge,
+.responding {
   background: #e0f2fe;
   color: #075985;
-  padding: 6px 10px;
+  padding: 10px 16px;
   border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 800;
 }
 
-.responding {
-  background: #dcfce7;
-  color: #166534;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 700;
+.org-description {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
 }
 
 .button-row {
   display: flex;
-  gap: 12px;
-  margin-top: 16px;
+  gap: 14px;
+  margin-top: 18px;
 }
 
 .button,
@@ -235,20 +240,21 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 52px;
+  height: 58px;
   border-radius: 999px;
   text-decoration: none;
-  font-weight: 700;
-}
-
-.button {
-  background: #d4e5fa;
-  color: white;
-}
-
-.secondary-button {
-  background: #d4e5fa;
+  font-weight: 800;
+  font-size: 1.05rem;
+  background: #f3f4f6;
   color: #111827;
+  transition: 0.2s ease;
+}
+
+.button:hover,
+.secondary-button:hover {
+  background: #dbeafe;
+  color: #1e3a8a;
+  transform: translateY(-1px);
 }
 
 .suggest-button {
@@ -262,6 +268,11 @@ select {
   border-radius: 10px;
   text-decoration: none;
   font-weight: 700;
+}
+
+.suggest-button:hover {
+  background: #dbeafe;
+  color: #1e3a8a;
 }
 
 .time-grid {
@@ -318,5 +329,9 @@ select {
   .time-grid div:first-child {
     border-top: none;
     padding-top: 0;
+  }
+
+  .button-row {
+    flex-direction: column;
   }
 }
