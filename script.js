@@ -260,20 +260,27 @@ countrySelect.addEventListener("change", () => {
 
     ${selectedCountry.organizations.map(org => `
       <div class="org-card">
-        <div class="org-topline">
-          <span class="badge">${org.trustBadge}</span>
-          <span class="responding">${org.responding ? "Currently responding ✅" : "Response not confirmed"}</span>
-        </div>
+  <h3 class="org-title">${org.name}</h3>
 
-        <h3>${org.name}</h3>
+  <div class="org-topline">
+    <span class="badge">${org.trustBadge}</span>
+    <span class="responding">${org.responding ? "Currently responding ✅" : "Response not confirmed"}</span>
+  </div>
 
-        <p><strong>What they are providing:</strong> ${org.supportType}</p>
+  <p class="org-description">
+    <strong>What they are providing:</strong> ${org.supportType}
+  </p>
 
-        <div class="button-row">
-          <a class="button" href="${org.url}" target="_blank" rel="noopener noreferrer"> ❤️ Donate </a>
-          <a class="secondary-button" href="${org.website}" target="_blank" rel="noopener noreferrer"> 🌐 Website </a>
-        </div>
-      </div>
+  <div class="button-row">
+    <a class="button" href="${org.url}" target="_blank" rel="noopener noreferrer">
+      ❤️ Donate
+    </a>
+
+    <a class="secondary-button" href="${org.website}" target="_blank" rel="noopener noreferrer">
+      🌐 Website
+    </a>
+  </div>
+</div>
     `).join("")}
   `;
 });
