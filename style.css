@@ -307,12 +307,15 @@ select {
 }
 
 /* LANGUAGES */
+
+/* LANGUAGES */
+
 .translate-box {
   display: inline-flex;
   align-items: center;
   gap: 14px;
   background: white;
-  border: 1px solid #dbeafe;
+  border: 1px solid #bfdbfe;
   border-radius: 999px;
   padding: 12px 18px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
@@ -323,11 +326,47 @@ select {
   font-weight: 800;
   color: #111827;
   font-size: 1rem;
+  white-space: nowrap;
 }
 
 #google_translate_element {
   display: inline-flex;
   align-items: center;
+}
+
+.goog-te-gadget {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 0 !important;
+}
+
+.goog-te-gadget-simple {
+  background: #eff6ff !important;
+  border: 1px solid #bfdbfe !important;
+  border-radius: 999px !important;
+  padding: 10px 16px !important;
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  color: #111827 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.goog-te-gadget-simple span {
+  display: inline !important;
+  color: #111827 !important;
+}
+
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+.goog-te-menu-value {
+  color: #111827 !important;
+}
+
+.goog-te-menu-value span {
+  color: #111827 !important;
 }
 
 #google_translate_element select {
@@ -341,27 +380,10 @@ select {
   cursor: pointer;
 }
 
-.goog-te-gadget {
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 0 !important;
-}
-
-.goog-te-gadget span {
-  display: none !important;
-}
-
-.goog-te-gadget img {
-  display: none !important;
-}
-
 @media (max-width: 600px) {
   .translate-box {
     width: 100%;
     justify-content: space-between;
     border-radius: 18px;
-  }
-
-  #google_translate_element select {
-    width: 100%;
   }
 }
