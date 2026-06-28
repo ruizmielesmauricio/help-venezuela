@@ -52,6 +52,14 @@
       "website": "https://wck.org/"
     },
     {
+      "name": "ShareTheMeal (UN World Food Programme)",
+      "trustBadge": "UN Agency",
+      "responding": true,
+      "supportType": "Emergency food assistance, ready-to-eat meals, cash-based food support, and nutrition assistance for families affected by the Venezuela earthquakes through the UN World Food Programme.",
+      "url": "https://sharethemeal.org/campaigns/venezuela1",
+      "website": "https://sharethemeal.org/"
+    },
+    {
       "name": "Malteser International",
       "trustBadge": "Humanitarian Aid NGO",
       "responding": true,
