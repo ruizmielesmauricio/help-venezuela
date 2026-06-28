@@ -306,7 +306,23 @@ select {
   }
 }
 
-/* LANGUAGES */
+/* search bar */
+.country-search {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: white;
+  margin-bottom: 12px;
+}
+
+.country-search:focus,
+select:focus {
+  outline: none;
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 4px #dbeafe;
+}
 
 /* LANGUAGES */
 
