@@ -305,3 +305,24 @@ select {
     flex-direction: column;
   }
 }
+
+/* LANGUAGES */
+.language-selector{
+
+    margin-left:auto;
+
+}
+
+.language-selector select{
+
+    padding:10px 14px;
+
+    border-radius:10px;
+
+    border:1px solid #d1d5db;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+}
