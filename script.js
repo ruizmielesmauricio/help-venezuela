@@ -202,6 +202,21 @@ const donationData = [
     ]
   },
   {
+  country: "Venezuela",
+  flag: "🇻🇪",
+  countryCode: "VE",
+  organizations: [
+    {
+      name: "Cáritas Venezuela",
+      trustBadge: "Catholic Humanitarian Network",
+      responding: true,
+      supportType: "Emergency humanitarian assistance, food, drinking water, hygiene kits, emergency shelter, psychosocial support, healthcare assistance, and recovery support for communities affected by the Venezuela earthquakes.",
+      url: "https://caritasvenezuela.org/donaciones/",
+      website: "https://caritasvenezuela.org/"
+    }
+  ]
+  },
+  {
     country: "Germany",
     flag: "🇩🇪",
     organizations: [
