@@ -151,7 +151,9 @@ a {
     gap: 12px;
     margin-top: 16px;
 }
+
 /* ADDING SHARING */
+
 .share-buttons{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -222,4 +224,54 @@ a {
 
     }
 
+}
+
+
+/* ADDING TIME and SUGGESTION FORM */
+.suggest-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  background: #1d4ed8;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.suggest-button:hover {
+  background: #1e40af;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.time-grid div {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.time-grid strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.time-grid span {
+  display: block;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+@media (max-width: 700px) {
+  .time-grid {
+    grid-template-columns: 1fr;
+  }
 }
