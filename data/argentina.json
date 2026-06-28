@@ -4,20 +4,20 @@
   "countryCode": "AR",
   "organizations": [
     {
-      name: "Cáritas Argentina",
-      trustBadge: "Catholic Humanitarian Network",
-      responding: true,
-      supportType: "Emergency humanitarian assistance coordinated with Cáritas Venezuela, including food, drinking water, hygiene kits, emergency shelter, psychosocial support, and recovery assistance for communities affected by the earthquakes.",
-      url: "https://www.caritas.org.ar/",
-      website: "https://www.caritas.org.ar/"
+      "name": "Cáritas Argentina",
+      "trustBadge": "Catholic Humanitarian Network",
+      "responding": true,
+      "supportType": "Emergency humanitarian assistance coordinated with Cáritas Venezuela, including food, drinking water, hygiene kits, emergency shelter, psychosocial support, and recovery assistance for communities affected by the earthquakes.",
+      "url": "https://www.caritas.org.ar/",
+      "website": "https://www.caritas.org.ar/"
     },
     {
-      name: "Cruz Roja Argentina",
-      trustBadge: "Red Cross Red Crescent",
-      responding: true,
-      supportType:"Emergency humanitarian assistance through the International Red Cross and Red Crescent Movement, supporting relief operations for communities affected by the Venezuela earthquakes.",
-      url: "https://cruzroja.org.ar/dona/",
-      website: "https://cruzroja.org.ar/"
+      "name": "Cruz Roja Argentina",
+      "trustBadge": "Red Cross Red Crescent",
+      "responding": true,
+      "supportType":"Emergency humanitarian assistance through the International Red Cross and Red Crescent Movement, supporting relief operations for communities affected by the Venezuela earthquakes.",
+      "url": "https://cruzroja.org.ar/dona/",
+      "website": "https://cruzroja.org.ar/"
     }
   ]
 }
